@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Registro de Ponto</title>
+</head>
+
+    <body>
+        <div class="container">
+            <h1>Registro de Ponto</h1>
+            <form id="registroForm">
+                <label for="tipo">Tipo de Registro</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="entrada">Entrada</option>
+                    <option value="saida_almoco">Saída para Almoço</option>
+                    <option value="volta_almoco">Volta do Almoço</option>
+                    <option value="saida">Saída</option>
+                </select>
+    
+                <label for="numeroRegistro">Número de Registro</label>
+                <input type="text" id="numeroRegistro" name="numeroRegistro" maxlength="6" pattern="\d{6}" required placeholder="Digite o número de 6 dígitos">
+    
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
